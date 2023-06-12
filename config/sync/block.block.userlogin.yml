@@ -1,0 +1,20 @@
+uuid: 241b93b4-ddd3-4ccd-b718-6d363c78ffe7
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - bartik
+id: userlogin
+theme: bartik
+region: sidebar_first
+weight: -5
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  label_display: '0'
+  provider: user
+visibility: {  }

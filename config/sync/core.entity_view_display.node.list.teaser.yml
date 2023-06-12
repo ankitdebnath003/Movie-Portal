@@ -1,0 +1,26 @@
+uuid: 55e5956f-6e1d-4a70-92db-5b8036002c01
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.list.field_date
+    - field.field.node.list.field_movie_names
+    - field.field.node.list.field_why_these_are_in_the_list_
+    - node.type.list
+  module:
+    - user
+id: node.list.teaser
+targetEntityType: node
+bundle: list
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_movie_names: true
+  field_why_these_are_in_the_list_: true

@@ -1,0 +1,22 @@
+uuid: 9cef9846-3f12-4b14-9af7-bd7c20bf6411
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: for_review_page
+label: 'For review page'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/review/[term:name]'
+selection_criteria:
+  920b6e4e-bf56-4a84-bab5-6986d7e4d7ac:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 920b6e4e-bf56-4a84-bab5-6986d7e4d7ac
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      category: category
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,8 @@
+uuid: 459d08b6-fb20-4ca7-acce-df88b32a876e
+langcode: en
+status: true
+dependencies: {  }
+id: custom-footer-menu
+label: 'Custom Footer Menu'
+description: ''
+locked: false

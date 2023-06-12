@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 85244184-36cc-4787-896c-38f574ad3a38
+name: 'Movie Portal'
+mail: movie-portal@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/6
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

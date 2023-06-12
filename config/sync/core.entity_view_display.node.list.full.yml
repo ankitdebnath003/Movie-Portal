@@ -1,0 +1,54 @@
+uuid: e673b58f-cd36-4430-804b-55f8d140a76e
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.list.field_date
+    - field.field.node.list.field_movie_names
+    - field.field.node.list.field_why_these_are_in_the_list_
+    - node.type.list
+  module:
+    - datetime
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.list.full
+targetEntityType: node
+bundle: list
+mode: full
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_movie_names:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_why_these_are_in_the_list_:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

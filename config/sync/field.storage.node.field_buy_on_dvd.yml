@@ -1,0 +1,19 @@
+uuid: c18e68a2-d8a4-442a-a194-2bf4ce571fa1
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_buy_on_dvd
+field_name: field_buy_on_dvd
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
