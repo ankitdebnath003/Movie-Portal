@@ -1,0 +1,12 @@
+uuid: 0f13293d-ad02-499b-a0e1-2c88ed003017
+langcode: en
+status: true
+dependencies:
+  module:
+    - admin_toolbar_search
+id: movie_manager
+label: 'Movie Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'use admin toolbar search'

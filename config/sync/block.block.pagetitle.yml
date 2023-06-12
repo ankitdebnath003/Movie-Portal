@@ -1,0 +1,24 @@
+uuid: a01b7ef4-b015-4293-b6f7-81be98c50032
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: pagetitle
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news/*\r\n/about"

@@ -1,0 +1,15 @@
+uuid: f120ab49-f2f8-4d98-8b8f-a2a385dce83f
+langcode: en
+status: true
+dependencies: {  }
+name: movie_thumbnail
+label: 'Movie Thumbnail'
+effects:
+  96827bf2-4095-42fa-bd80-02f0c2c495ee:
+    uuid: 96827bf2-4095-42fa-bd80-02f0c2c495ee
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

@@ -1,0 +1,8 @@
+uuid: ddf643c9-4b0c-401d-b08c-40be4052cc95
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Category'
+vid: news_
+description: ''
+weight: 0

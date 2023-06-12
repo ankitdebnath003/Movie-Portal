@@ -1,0 +1,142 @@
+uuid: 2bdb0b21-da79-46e7-8193-da1c8072febc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.list.field_date
+    - field.field.node.list.field_movie_names
+    - field.field.node.list.field_why_these_are_in_the_list_
+    - node.type.list
+  module:
+    - datetime
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          4a926f26-af30-4175-bbbb-cc80530f7676:
+            uuid: 4a926f26-af30-4175-bbbb-cc80530f7676
+            region: content
+            configuration:
+              id: 'extra_field_block:node:list:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+          87fbccfb-0b6d-4db8-a084-a1a2a48b7923:
+            uuid: 87fbccfb-0b6d-4db8-a084-a1a2a48b7923
+            region: content
+            configuration:
+              id: 'field_block:node:list:field_why_these_are_in_the_list_'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          364b0c70-191c-4d1a-a858-f2652fae2d14:
+            uuid: 364b0c70-191c-4d1a-a858-f2652fae2d14
+            region: content
+            configuration:
+              id: 'field_block:node:list:field_movie_names'
+              label: 'Movie Names'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: full
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          7766f9bc-7066-45fd-ab7a-518d89cf7d3a:
+            uuid: 7766f9bc-7066-45fd-ab7a-518d89cf7d3a
+            region: content
+            configuration:
+              id: 'field_block:node:list:field_date'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          4cd6bf85-e269-4bb8-aa92-ba03e88a76a5:
+            uuid: 4cd6bf85-e269-4bb8-aa92-ba03e88a76a5
+            region: content
+            configuration:
+              id: 'field_block:node:list:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.list.default
+targetEntityType: node
+bundle: list
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_movie_names:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_why_these_are_in_the_list_:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
